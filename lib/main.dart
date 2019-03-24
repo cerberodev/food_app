@@ -118,9 +118,15 @@ class _MyHomePageState extends State<MyHomePage> {
                         SizedBox(width: 10.0),
                         _foodCard(),
                         SizedBox(width: 10.0),
+                        _foodCard(),
+                        SizedBox(width: 10.0),
+                        _foodCard(),
+                        SizedBox(width: 10.0),
+                        _foodCard(),
+                        SizedBox(width: 10.0),
                       ],
                     ),
-                  )
+                  ),
                 ],
               )
             ],
@@ -195,10 +201,40 @@ class _MyHomePageState extends State<MyHomePage> {
                       )
                     ],
                   ))
+                  
+                  
             ],
-          )
+            
+          ),
+          Padding(
+                    padding: EdgeInsets.only(bottom: 5.0),
+                  ),
+                  Container(
+                    padding: EdgeInsets.only(top: 15.0, left: 15.0),
+                    height: 125.0,
+                    child: ListView(
+                      shrinkWrap: true,
+                      scrollDirection: Axis.horizontal,
+                      children: <Widget>[
+                        _foodCard(),
+                        SizedBox(width: 10.0),
+                        _foodCard(),
+                        SizedBox(width: 10.0),
+                        _foodCard(),
+                        SizedBox(width: 10.0),
+                        _foodCard(),
+                        SizedBox(width: 10.0),
+                        _foodCard(),
+                        SizedBox(width: 10.0),
+                        _foodCard(),
+                        SizedBox(width: 10.0),
+                      ],
+                    ),
+                  )
         ],
+        
       ),
+      
     );
   }
 
